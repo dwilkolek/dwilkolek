@@ -16,11 +16,11 @@ error_reporting(0);
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="/icon.png" />
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/icons.css">
-        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/icons.css">
+        <script src="/static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -45,7 +45,7 @@ error_reporting(0);
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <?php
-        $navbar = file_get_contents('edit/navbar.php');
+        $navbar = file_get_contents('static/edit/navbar.php');
         $navbar = str_replace("{active1}", "active", $navbar);
         $navbar = str_replace("{active2}", "", $navbar);
         $navbar = str_replace("{active3}", "", $navbar);
@@ -73,7 +73,7 @@ error_reporting(0);
             <div class="row">
                 <div class="col-md-6 clearfix">
                     <!--                    <h3>My short story</h3>-->
-                    <p class="text-justify about-me" ><img width="132" alt="My personal photography" src="/img/me.jpg" class="my-photo img-rounded img"  />
+                    <p class="text-justify about-me" ><img width="132" alt="My personal photography" src="/static/img/me.jpg" class="my-photo img-rounded img"  />
 
                         Hello! I am an enthusiastic coder who earned bachelor of science at Silesian University of Technology in Computer Science.
                         Information Technology is my passion which I develop every day.
@@ -353,8 +353,12 @@ error_reporting(0);
             <hr>
             <footer class="" style="">
                 <p>&copy; Wilkolek.eu 2014
+                    <?php
+                    /* 
                     <a href="https://www.facebook.com/Slishu297" title="Polub na Facebooku" target="_blank" class="contact-icon facebook tooltip-trigger " data-placement="top"><i class="icon-facebook"></i></a>
                     <a href="http://gplus.to/slishu" title="Dodaj mnie do swego kręgu" target="_blank" class="contact-icon facebook  googleplus tooltip-trigger " data-placement="top"><i class="icon-google-plus"></i></a>
+                    */
+                    ?>
                     <a href="http://lnkd.in/iKrqR4" title="Profil na LinkedIN" target="_blank" class="contact-icon facebook  linkedin tooltip-trigger " data-placement="top"><i class="icon-linkedin"></i></a>
 
                 </p>
@@ -367,9 +371,9 @@ error_reporting(0);
         <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.js"><\/script>')</script>
 
-        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="static/js/vendor/bootstrap.min.js"></script>
 
-        <script src="/js/main.js"></script>
+        <script src="static/js/main.js"></script>
 
 
     </body>
