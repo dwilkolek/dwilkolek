@@ -1,2 +1,0 @@
-Sitemap: http://www.wilkolek.eu/sitemap.xml
-User-agent: *

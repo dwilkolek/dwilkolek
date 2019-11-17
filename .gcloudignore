@@ -13,5 +13,14 @@
 .git
 .gitignore
 
-# PHP Composer dependencies:
+
+/node_modules/
 /vendor/
+/public/
+/src/
+e2e/
+^(.*/)?\..*$
+^(\b(?!dist\b)\w+)\.json$
+^(.*/)?.*\.md$
+^(.*/)?.*\.yaml$
+^LICENSE
