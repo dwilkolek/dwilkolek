@@ -15,12 +15,7 @@
 
 
 /node_modules/
-/vendor/
 /public/
 /src/
-e2e/
-^(.*/)?\..*$
-^(\b(?!dist\b)\w+)\.json$
-^(.*/)?.*\.md$
-^(.*/)?.*\.yaml$
+/e2e/
 ^LICENSE
