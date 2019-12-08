@@ -1,0 +1,86 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+// $title-color: #ff0000;
+@import "~bulma/bulma.sass";
+
+/* WorkExpirience */
+article.work-expirience {
+  padding: 0 20px 40px;
+  h3 {
+    color: #3aceb2;
+    svg {
+      color: rgb(29, 150, 127);
+    }
+  }
+  table {
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      td:nth-child(1) {
+          width: 70%;
+      }
+      td:nth-child(2) {
+          width: 30%;
+      }
+    }
+  }
+}
+
+article.milestones {
+  padding: 0 20px 40px;
+  h3 {
+    color: #ffd900;
+    svg {
+      color: #ffbb00;
+    }
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      td:nth-child(1) {
+          width: 70%;
+      }
+      td:nth-child(2) {
+          width: 30%;
+      }
+    }
+  }
+}
+
+article.skill-tile {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 24px !important;
+  h3 {
+    word-break: normal;
+    margin-top: 2px;
+    color: #2ebdff;
+    svg {
+      color: #0281bb;
+      margin-right: 10px;
+    }
+  }
+  ul.list {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    .list-item {
+      border: none;
+      font-size: 1.2em;
+      font-weight: 400;
+      &::before,
+      &::after {
+        color: rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+      }
+      &::before {
+        content: "{ ";
+      }
+      &::after {
+        content: " }";
+      }
+    }
+  }
+}
