@@ -11,11 +11,11 @@ import PropTypes from "prop-types"
 
 import Footer from "./footer"
 import "./bulma.scss"
-import "./layout.css"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedinIn, faGithub, faStrava } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, faCubes, faCheckDouble, faTools, faGrinBeam, faTrophy, faHatCowboy } from '@fortawesome/free-solid-svg-icons'
-library.add(faCode, faDatabase, faCubes, faCheckDouble, faTools, faGrinBeam, faTrophy, faHatCowboy);
+library.add(faLinkedinIn, faGithub, faStrava, faCode, faDatabase, faCubes, faCheckDouble, faTools, faGrinBeam, faTrophy, faHatCowboy);
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`

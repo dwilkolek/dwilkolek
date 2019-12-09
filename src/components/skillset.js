@@ -38,21 +38,21 @@ class Skillset extends React.Component {
         }
     ]];
     render() {
-        return <section className={"section skills has-text-centered"}>
-            <div className={"container"}>
-                <div className={"tile is-vertical"}>
-                    <div className={"tile is-ancestor"}>
-                        <div className={"tile"}>
-                            <div className={"tile is-parent"}>
+        return <section className="section skills has-text-centered">
+            <div className="container">
+                <div className="tile is-vertical">
+                    <div className="tile is-ancestor">
+                        <div className="tile">
+                            <div className="tile is-parent">
                                 <WorkExperience />
                             </div>
-                            <div className={"tile is-parent"}>
+                            <div className="tile is-parent">
                                 <Milestones />
                             </div>
                         </div>
                     </div>
-                    <div className={"tile is-ancestor"}>
-                        <div className={"tile"}>
+                    <div className="tile is-ancestor">
+                        <div className="tile">
                             {this.listsOfSkills[0].map((value, index) => {
                                 return <SkillTile key={value.title} title={value.title} icon={value.icon} skills={value.skills} />
                             })}
@@ -66,8 +66,8 @@ class Skillset extends React.Component {
                       /> */}
                         </div>
                     </div>
-                    <div className={"tile is-ancestor"}>
-                        <div className={"tile"}>
+                    <div className="tile is-ancestor">
+                        <div className="tile">
                             {this.listsOfSkills[1].map((value, index) => {
                                 return <SkillTile key={value.title} title={value.title} icon={value.icon} skills={value.skills} />
                             })}

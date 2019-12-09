@@ -23,7 +23,7 @@ app.get('*', function (req, res, next) {
         next();
     }
 });
-app.use(express.static('public'))
+app.use(express.static('public'));
 const server = app.listen(8080, () => {
     const host = server.address().address;
     const port = server.address().port;

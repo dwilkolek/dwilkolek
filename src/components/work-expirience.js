@@ -20,15 +20,15 @@ class WorkExpirience extends React.Component {
         }
     ];
     render() {
-        return <article className={"tile is-child work-expirience"}>
-            <div className={"content"}>
-                <h3 className={"title is-2"}> <FontAwesomeIcon icon="hat-cowboy" size="1x" /> Work Experience</h3>
+        return <article className="tile is-child work-expirience">
+            <div className="content">
+                <h3 className="title is-2"> <FontAwesomeIcon icon="hat-cowboy" size="1x" /> Work Experience</h3>
                 <table id="workExpirience">     
                     <tbody>
                         {this.positions.map((pos, index) => {
                             return <tr key={pos.company}>
                                 <td>
-                                    <span className={"title is-5"}>{pos.position}</span>
+                                    <span className="title is-5">{pos.position}</span>
                                     <br />
                                     <i>{pos.company}</i>
                                 </td>
