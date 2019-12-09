@@ -26,7 +26,7 @@ class Milestones extends React.Component {
     render() {
         return <article className="tile is-child milestones">
             <div className="content">
-                <h3 className="title is-2"><FontAwesomeIcon icon="trophy" size="1x" /> Milestones</h3>
+                <h2 className="title is-2"><FontAwesomeIcon icon="trophy" size="1x" /> Milestones</h2>
                 <table>
                     <tbody>
                         {this.milestones.map((milestone) => {

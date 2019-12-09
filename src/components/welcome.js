@@ -5,9 +5,7 @@ const Welcome = () => (
     <div className="hero-body">
       <div className="container">
         Hello! I am
-        <h1 className="title is-1">Damian Wilkołek
-          <span>Full Stack Developer</span>
-        </h1>
+        <h1 className="title is-1">Damian Wilkołek <span>Full Stack Developer</span></h1>
       </div>
     </div>
     <div className="area">
