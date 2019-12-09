@@ -13,9 +13,7 @@
 .git
 .gitignore
 
-
-/node_modules/
-/public/
-/src/
-/e2e/
-^LICENSE
+# Node.js dependencies:
+node_modules/
+src/
+cache/
