@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Damian Wilkołek - wilkolek.eu`,
+        short_name: `wilkolek.eu`,
         start_url: `/`,
         background_color: `#232323`,
         theme_color: `#d0ff00`,
