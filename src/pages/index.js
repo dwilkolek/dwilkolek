@@ -8,10 +8,9 @@ import Welcome from "../components/welcome"
 const IndexPage = () => (
   <Layout>
     <SEO
-     title="developer, coder, freelancer"
-      description="I'm Fullstack developer. I code in Java, JavaScript and Typescript with frameworks like Angular and Spring." 
-      
-      />
+      title="developer, coder, freelancer"
+      description="I am Fullstack developer. I code in Java, JavaScript and Typescript with frameworks like Angular and Spring."
+    />
     <Welcome />
     <Skillset />
   </Layout>

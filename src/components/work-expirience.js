@@ -11,12 +11,12 @@ class WorkExpirience extends React.Component {
         {
             position: "JAVA Developer",
             company: "KAMSOFT",
-            dates: "2011 - 2013"
+            dates: "2013 - 2015"
         },
         {
             position: "Web developer",
             company: "Miastostrada",
-            dates: "2015 - now"
+            dates: "2013"
         }
     ];
     render() {
