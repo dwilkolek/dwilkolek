@@ -6,14 +6,13 @@ app.disable('x-powered-by');
 
 app.get('*', function (req, res, next) {
     var isHttps = req.protocol === 'https';
-    var isProto = req.get('x-forwarded-proto') === "https";
+    // var isProto = req.get('x-forwarded-proto') === "https";
     var isWWW = (req.get('host').indexOf('www.') > -1);
-    var condition = !isHttps || isWWW;
-    if (condition && !isProto) {
+   
+    res.set('x-forwarded-proto', req.protocol);
+    res.set('Strict-Transport-Security', 'max-age=31536000');
+    if (isWWW || !isHttps) {
         let host = req.get('host');
-        if (isHttps) {
-            res.set('x-forwarded-proto', 'https');
-        }
         
         if (isWWW) {
             host = host.replace('www.', '')            

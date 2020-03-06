@@ -19,6 +19,8 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+            image
           }
         }
       }
@@ -26,6 +28,20 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+
+  const structure = {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Damian Wilkołek",
+    "url": "https://wilkolek.eu",
+    "address": "",
+    "sameAs": [
+      "https://www.facebook.com/dwilkolek",
+      "https://twitter.com/dwilkolek",
+      "https://www.strava.com/athletes/43991573",
+      "https://www.linkedin.com/in/wilkolekdamian/"
+    ]
+  };
 
   return (
     <Helmet
@@ -38,6 +54,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.image,
         },
         {
           property: `og:title`,
@@ -68,6 +92,11 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      structure={(
+        <script type="application/ld+json">
+          {JSON.stringify(structure)}
+        </script>
+      )}
     />
   )
 }
@@ -77,6 +106,7 @@ SEO.defaultProps = {
   title: '',
   meta: [],
   description: ``,
+  structure: ``
 }
 
 SEO.propTypes = {
@@ -84,6 +114,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  structure: PropTypes.string
 }
 
 export default SEO

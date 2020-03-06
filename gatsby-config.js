@@ -3,7 +3,8 @@ module.exports = {
     title: `Wilkołek Damian`,
     description: `I'm Fullstack developer. I code in Java, JavaScript and Typescript with frameworks like Angular and Spring.`,
     author: `Damian Wilkołek`,
-    siteUrl: `https://wilkolek.eu`,
+    siteUrl: `https://wilkolek.eu`, // No trailing slash allowed!
+    image: "/images/wilkolek-icon.png",
   },
   plugins: [
     `gatsby-plugin-sass`,
