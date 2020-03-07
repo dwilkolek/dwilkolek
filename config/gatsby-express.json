@@ -1,0 +1,17 @@
+{
+  "redirects": [],
+  "pages": [
+    {
+      "path": "/offline-plugin-app-shell-fallback/"
+    },
+    {
+      "path": "/404/"
+    },
+    {
+      "path": "/"
+    },
+    {
+      "path": "/404.html"
+    }
+  ]
+}

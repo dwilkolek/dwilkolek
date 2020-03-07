@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,7 +20,7 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             siteUrl
-            image
+            defaultImage: image
           }
         }
       }
@@ -29,20 +29,6 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const structure = {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Damian Wilkołek",
-    "url": "https://wilkolek.eu",
-    "address": "",
-    "sameAs": [
-      "https://www.facebook.com/dwilkolek",
-      "https://twitter.com/dwilkolek",
-      "https://www.strava.com/athletes/43991573",
-      "https://www.linkedin.com/in/wilkolekdamian/"
-    ]
-  };
-
   return (
     <Helmet
       htmlAttributes={{
@@ -50,6 +36,26 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`${site.siteMetadata.title} | %s`}
+      script={[{
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify(
+          {
+            '@context': 'http://schema.org',
+            '@type': 'Person',
+            'name': 'Damian Wilkołek',
+            'url': 'https://wilkolek.eu',
+            'address': '',
+            'sameAs': [
+              'https://www.facebook.com/dwilkolek',
+              'https://twitter.com/dwilkolek',
+              'https://www.instagram.com/damianwilkolek/',
+              'https://www.strava.com/athletes/43991573',
+              'https://www.linkedin.com/in/wilkolekdamian/',
+              'https://github.com/dwilkolek'
+            ]
+          }
+        )
+      }]}
       meta={[
         {
           name: `description`,
@@ -61,11 +67,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: `${site.siteMetadata.siteUrl}${image || site.siteMetadata.defaultImage}`,
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${site.siteMetadata.title} | ${title}`,
         },
         {
           property: `og:description`,
@@ -85,18 +91,13 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${site.siteMetadata.title} | ${title}`,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
         },
       ].concat(meta)}
-      structure={(
-        <script type="application/ld+json">
-          {JSON.stringify(structure)}
-        </script>
-      )}
     />
   )
 }
@@ -106,7 +107,7 @@ SEO.defaultProps = {
   title: '',
   meta: [],
   description: ``,
-  structure: ``
+  image: null
 }
 
 SEO.propTypes = {
@@ -114,7 +115,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  structure: PropTypes.string
+  image: PropTypes.string
 }
 
 export default SEO

@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Wilkołek Damian`,
+    title: `Damian Wilkołek`,
     description: `I'm Fullstack developer. I code in Java, JavaScript and Typescript with frameworks like Angular and Spring.`,
     author: `Damian Wilkołek`,
     siteUrl: `https://wilkolek.eu`, // No trailing slash allowed!
-    image: "/images/wilkolek-icon.png",
+    image: "/images/wilkolek.png",
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -31,6 +31,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/wilkolek-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-express',
+      options: {
+        output: 'config/gatsby-express.json',
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

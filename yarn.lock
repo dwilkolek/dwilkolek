@@ -5215,6 +5215,13 @@ gatsby-page-utils@^0.0.32:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-express@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-express/-/gatsby-plugin-express-1.1.6.tgz#1e381ef5a268f1d451e474a9f11a5306856df867"
+  integrity sha512-DO/XK2ga+Afzayw1ocIW/yr2NYk7XoOJgr+sJ2PmEpQbCNSlPUtHj/g/qpJ7cqm2Yrh5Jr62U9LezcrMwCbS1w==
+  dependencies:
+    "@reach/router" "^1.2.1"
+
 gatsby-plugin-manifest@^2.2.30:
   version "2.2.30"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.30.tgz#6fef1c34fe1624a60b51b87374f66c063a857e11"
