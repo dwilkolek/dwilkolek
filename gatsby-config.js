@@ -38,6 +38,24 @@ module.exports = {
         output: 'config/gatsby-express.json',
       }
     },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-25788805-9',
+          // Setting this parameter is optional
+          cookieName: 'gatsby-gdpr-google-analytics', // default is gatsby-gdpr-google-analytics
+          anonymize: true // default is true
+        },
+        facebookPixel: {
+          pixelId: 'YOUR_FACEBOOK_PIXEL_ID',
+          // Setting this parameter is optional
+          cookieName: 'YOUR_CUSTOM_COOKIE_NAME' // default is gatsby-gdpr-facebook-pixel
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

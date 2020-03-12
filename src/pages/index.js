@@ -8,8 +8,8 @@ import Welcome from "../components/welcome"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="curious developer"
-      description="Fullstack developer using Java, JavaScript, Typescript with Spring, Angular, Kafka, Flink in toolbelt."
+      title="Fullstack developer based in Kraków"
+      description="Damian Wilkołek. Fullstack developer. On daily basis I create and maintain applications using Angular, Spring and Flink."
     />
     <Welcome />
     <Skillset />
