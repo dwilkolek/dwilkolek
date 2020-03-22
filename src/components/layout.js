@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
     <>
       <main>{children}</main>
       <Footer />
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Accept"
         declineButtonText="Decline"
@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         enableDeclineButton={true}
       >
         This website uses cookies to enhance the user experience.{" "}  
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   )
 }
