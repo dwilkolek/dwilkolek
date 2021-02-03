@@ -1,7 +1,7 @@
 import React from "react"
 
 const Welcome = () => (
-  <section className="hero is-link is-fullheight">
+  <section className="hero is-link is-fullheight gcp">
     <div className="hero-body">
       <div className="container">
         Hello! I am
