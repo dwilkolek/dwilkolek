@@ -1,7 +1,7 @@
 steps:
 - name: node
   entrypoint: yarn
-  args: ['install']
+  args: ['install', '--frozen-lockfile']
 - name: node
   entrypoint: yarn
   args: ['build']
