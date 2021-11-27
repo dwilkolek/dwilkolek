@@ -7,7 +7,7 @@ class Skillset extends React.Component {
         {
             icon: "code",
             title: "Languages",
-            skills: ["Java", "JavaScript", "TypeScript"]
+            skills: ["Java", "Kotlin", "JavaScript", "TypeScript"]
         },
         {
             icon: "cubes",

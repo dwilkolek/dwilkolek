@@ -175,11 +175,19 @@ article.milestones {
     width: 100%;
     table-layout: fixed;
     tr {
-      td:nth-child(1) {
-        width: 70%;
+      td:nth-child(1) {        
+        width: 90%;
+        div {
+          display: flex;
+          align-items: center;
+          img {
+            max-height: 70px;
+            margin-right: 10px;
+          }
+        }
       }
       td:nth-child(2) {
-        width: 30%;
+        // width: 30%;
       }
     }
   }

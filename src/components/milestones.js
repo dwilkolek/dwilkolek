@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 class Milestones extends React.Component {
     milestones = [
         {
+            image: '/images/cert_mark_SA_small_150px.png',
+            year: 2021,
+            link: 'https://www.scaledagileframework.com/',
+            goal:
+                "Earned certification of <b>SAFe 5 Agilist</b> <br />Certificate ID: 92049297-3518"
+        },
+        {
             year: 2016,
             goal:
                 "<b>Graduated Silesian University of technology</b>, Faculty of Materials Engineering and Metallurgy, Division of Industrial Informatics"
@@ -32,7 +39,15 @@ class Milestones extends React.Component {
                         {this.milestones.map((milestone) => {
                             return <tr key={milestone.year}>
                                 <td>
-                                    <p dangerouslySetInnerHTML={{ __html: milestone.goal }}></p>
+                                    <div>
+                                        {
+                                            milestone.image &&
+                                            <a href={milestone.link} target="blank">
+                                                <img src={milestone.image} alt={milestone.goal.split('-')[0].trim()} />
+                                            </a>
+                                        }
+                                        <p dangerouslySetInnerHTML={{ __html: milestone.goal }}></p>
+                                    </div>
                                 </td>
                                 <td>{milestone.year}</td>
                             </tr>

@@ -4,14 +4,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 class WorkExpirience extends React.Component {
     positions = [
         {
+            position: "Senior Full Stack Developer",
+            company: "TechnipFMC",
+            dates: "Oct 2021 - now"
+        },
+        {
+            position: "Software enginner",
+            company: "H2O.ai",
+            dates: "Mar 2021 - Oct 2021"
+        },
+        {
             position: "Fullstack developer",
             company: "MAPP (former Teradata)",
-            dates: "2015 - now"
+            dates: "Mar 2015 - Feb 2021"
         },
         {
             position: "JAVA Developer",
             company: "KAMSOFT",
-            dates: "2013 - 2015"
+            dates: "Aug 2013 - Feb 2015"
         },
         {
             position: "Web developer",
