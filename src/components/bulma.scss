@@ -153,7 +153,8 @@ article.work-expirience {
     table-layout: fixed;
     tr {
       td:nth-child(1) {
-        width: 70%;
+        width: 70%;    
+        text-align: left;
       }
       td:nth-child(2) {
         width: 30%;
