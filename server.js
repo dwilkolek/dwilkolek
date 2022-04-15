@@ -17,8 +17,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.static('public'));
-app.use(express.static('images'));
-app.use(express.static('icons'));
 
 app.use(gatsyExpress('config/gatsby-express.json', {
     publicDir: 'public/',
