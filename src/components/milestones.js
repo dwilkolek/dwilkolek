@@ -6,7 +6,7 @@ class Milestones extends React.Component {
         {
             year: 2022,
             goal:
-                "Attended Power BI training and successfully completed it."
+                "Attended <b>Power BI</b> training and successfully completed it."
         },
         {
             image: '/images/cert_mark_SA_small_150px.png',
