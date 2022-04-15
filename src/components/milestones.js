@@ -4,6 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 class Milestones extends React.Component {
     milestones = [
         {
+            year: 2022,
+            goal:
+                "Attended Power BI training and successfully completed it."
+        },
+        {
             image: '/images/cert_mark_SA_small_150px.png',
             year: 2021,
             link: 'https://www.scaledagileframework.com/',
