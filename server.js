@@ -1,7 +1,6 @@
 const compression = require('compression')
 const express = require('express');
 const app = express();
-const gatsyExpress = require('gatsby-plugin-express');
 app.use(compression());
 app.disable('x-powered-by');
 
@@ -17,15 +16,6 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.static('public'));
-
-app.use(gatsyExpress('config/gatsby-express.json', {
-    publicDir: 'public/',
-    template: __dirname + '/public/404/index.html',
-
-    // redirects all /path/ to /path
-    // should be used with gatsby-plugin-remove-trailing-slashes
-    redirectSlashes: true,
-}));
 
 const server = app.listen(8080, () => {
     const host = server.address().address;
