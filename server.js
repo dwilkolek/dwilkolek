@@ -9,7 +9,7 @@ app.use(function (req, res, next) {
     if (host.match(/^www\..*/i)) {
         return res.redirect(301, "https://" + host.replace('www.', '') + req.url);
     } else if (req.headers['x-forwarded-proto'] !== 'https') {
-        return res.redirect('https://' + req.hostname + req.url);
+        return res.redirect(301, 'https://' + req.hostname + req.url);
     }
     res.set('Strict-Transport-Security', 'max-age=31536000');
     next();
