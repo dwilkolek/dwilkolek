@@ -57,7 +57,7 @@ Hi 👋 My name is Damian Wilkołek
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" />
     </a>
     <a href="https://www.strava.com/athletes/43991573" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" />
+        <img src="https://w" width="32" height="32" />
     </a>
     
 </p>
