@@ -1,35 +1,41 @@
-Hi 👋 My name is Damian Wilkołek
-================================Fullstack engineer------------------\_
-🌍  I'm based in Kraków
-✉️  You can contact me at [pm@wilkolek.eu](mailto:pm@wilkolek.eu)\*
-🧠  I'm learning Rust 🦀
+# Hi 👋 My name is Damian Wilkołek
+
+## Full Stack developer
+
+- 🌍  I'm based in Kraków
+- 🖥️ See my website at [wilkolek.eu](https://wilkolek.eu)
+- ✉️  You can contact me at [pm@wilkolek.eu](mailto:pm@wilkolek.eu)
+- 🧠  I'm learning Rust 🦀
 
 ### Languages
 
 <p align="left">
-    <a href="https://go.dev/doc/" target="_blank" rel="noreferrer">        
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/go-colored.svg" width="36" height="36" alt="Go" />
-    </a>
     <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">        
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" />
     </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">        
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" />
     </a>
     <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer">        
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kotlin-colored.svg" width="36" height="36" alt="Kotlin" />
     </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">        
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
+    </a>
+    <a href="https://go.dev/doc/" target="_blank" rel="noreferrer">        
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/go-colored.svg" width="36" height="36" alt="Go" />
+    </a>
     <a href="https://www.rust-lang.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/rust-colored.svg" width="36" height="36" alt="Rust" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" />
     </a>
 </p>
 
 ### Technologies
 
 <p align="left">
+    <a href="https://spring.io/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/dwilkolek/dwilkolek/master/public/assets/icons/springio-icon.svg" width="36" height="36" alt="Spring" />
+    </a>
     <a href="https://angular.io/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg" width="36" height="36" alt="Angular" />
     </a>
@@ -38,6 +44,9 @@ Hi 👋 My name is Damian Wilkołek
     </a>
     <a href="https://graphql.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" width="36" height="36" alt="GraphQL" />
+    </a>
+       <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/dwilkolek/dwilkolek/master/public/assets/icons/kafka-icon.svg" width="36" height="36" alt="Spring" />
     </a>
     <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" />
@@ -57,7 +66,7 @@ Hi 👋 My name is Damian Wilkołek
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" />
     </a>
     <a href="https://www.strava.com/athletes/43991573" target="_blank" rel="noreferrer">
-        <img src="https://w" width="32" height="32" />
+        <img src="https://raw.githubusercontent.com/dwilkolek/dwilkolek/master/public/assets/icons/strava-icon.svg" width="32" height="32" />
     </a>
     
 </p>
