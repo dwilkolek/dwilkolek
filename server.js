@@ -20,4 +20,5 @@ app.use(express.static('public'));
 const server = app.listen(8080, () => {
     const host = server.address().address;
     const port = server.address().port;
+    console.log(`Serving at ${host}:${port}`)
 });
