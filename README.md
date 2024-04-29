@@ -54,9 +54,3 @@
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" />
     </a>
 </p>
-
-##### GitHub Stats
-
-<a href="http://www.github.com/dwilkolek">
-	<img src="https://github-readme-stats.vercel.app/api?username=dwilkolek&show_icons=true&hide=&count_private=true&title_color=84cc16&text_color=ffffff&icon_color=84cc16&bg_color=1c1917&hide_border=true&show_icons=true" alt="dwilkolek's GitHub stats" />
-</a>
